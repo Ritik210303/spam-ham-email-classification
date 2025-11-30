@@ -15,9 +15,6 @@ spam-ham-email-classification/
 ├── spam_ham_email_classification_rl.py      # Python script version
 ├── ReadMe.pdf                                # Academic project report
 │
-├── spam_Emails_data.csv                      # Dataset
-├── glove.6B.100d.txt                         # Pre-trained GloVe embeddings (100d)
-│
 ├── outputs/                                  # All charts & model results
 │   ├── img1_lable_distribution.png
 │   ├── img2_length_analysis.png
@@ -46,11 +43,22 @@ This project includes full preprocessing, training, evaluation, interpretation, 
 
 ## 📊 Dataset
 
-- Source: Public Spam/Ham dataset (~190K emails)  
+- Source: Public Spam/Ham dataset (~190K emails)
+- Download `spam_Emails_data.csv` from: https://www.kaggle.com/datasets/meruvulikith/190k-spam-ham-email-dataset-for-classification
 - Final processed dataset: **182K samples**  
 - Columns:
   - `text` — email body  
   - `label` — `{0: ham, 1: spam}`  
+Place the file in the project root (same folder as the notebook) before running.
+---
+
+### Download GloVe Embeddings
+
+Download `glove.6B.100d.txt` from the kaggle :
+
+https://www.kaggle.com/datasets/danielwillgeorge/glove6b100dtxt/data
+
+Place the file in the project root (same folder as the notebook) before running.
 
 ---
 
